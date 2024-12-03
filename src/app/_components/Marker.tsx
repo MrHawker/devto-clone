@@ -1,4 +1,4 @@
-export function Marker() {
+export function Marker({width}:{width:number}) {
   return (
     <div style={{ gridAutoRows: "min-content" }} className="grid gap-4">
       <div className="h-fit rounded bg-white ring-[1px] ring-slate-200">

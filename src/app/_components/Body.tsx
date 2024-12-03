@@ -1,7 +1,7 @@
-export function Body() {
+export function Body({width}:{width:number}) {
   return (
     <div>
-      <header className="flex justify-start py-[8px] text-[18px] tracking-tighter md:mb-2 md:py-0">
+      <header className="flex justify-start py-[8px] text-[18px] tracking-tighter md:mb-[7.5px] md:py-0 mb-[-0.5px]">
         <div className="rounded-lg px-[12px] py-[4px] font-bold hover:cursor-pointer hover:bg-white hover:text-blue-700">
           Relevant
         </div>
@@ -17,53 +17,44 @@ export function Body() {
         className="mb-2 lg:rounded shadow-sm ring-[1px] ring-slate-200"
       >
         <img
-          src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Forqhkfvmo0d09p69hq52.PNG"
+          src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fpf55mryu3tg4ai2bydve.png"
           width="1000"
           height="420"
-          className="lg:rounded bg-[#dddddd]"
+          className="lg:rounded-t bg-[#dddddd]"
           alt="Cover image for How to Write a Token Price Oracle Smart Contract"
         />
-        <div className="rounded-b bg-white p-[20px] pb-[23px]">
-          <div className="mb-2 flex h-[35px]">
+        <div className="rounded-b bg-white p-4 pb-3 lg:p-[20px] lg:pb-[23px]">
+          <div className="mb-3 lg:mb-2 flex h-[35px] ">
             <img
               className="mr-[9px] mt-[1px] h-[32px] w-[32px] rounded-full ring-[0.2px] ring-black"
-              src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2461201%2F44044c84-4d08-40a0-bc28-56942db7d6e6.png"
-              alt="marksantiago02 profile"
+              src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F520299%2F38de40f4-43b2-4a0d-a7cc-2fa6494ac4b3.png"
+              alt="lizacosta profile"
               loading="lazy"
             />
-            <div className="flex flex-col justify-center">
-              <button className="ml-[-4px] rounded p-1 text-sm transition-colors duration-200 hover:bg-[#f5f5f5]">
-                Mark Santiago
+            <div className="flex flex-col justify-center ml-[-1px]">
+              <button className="tracking-tight font-[550] ml-[-4px] rounded p-1 text-sm transition-colors duration-200 hover:bg-[#f5f5f5] text-slate-700">
+                Liz Acosta
               </button>
-              <button className="mt-[-4px] pb-1 text-start text-[12.5px]  text-slate-600 hover:text-black">
-                Dec 1
+              <button className="font-light mt-[-4px] pb-1 text-start text-[11.7px]  text-slate-700 hover:text-black">
+                Dec 2
               </button>
             </div>
           </div>
           <div className="lg:pl-[40px]">
             <h1
-              style={{ lineHeight: "38px" }}
-              className="mb-[4px] font-bold tracking-tight hover:cursor-pointer hover:text-blue-800 lg:text-3xl"
+              style={width >= 1024 ? { lineHeight: "38px" } : { lineHeight: "25px" }}
+              className="mb-[4px] font-bold tracking-tight hover:cursor-pointer hover:text-blue-800 text-xl lg:text-3xl"
             >
-              How to Write a Token Price Oracle Smart Contract
+              The DevRel Digest November 2024: If You Content It, They Will Come
             </h1>
-            <div className="mb-[11.5px] ml-[-4px] mt-2 text-[13.2px]  text-slate-700">
+            <div className="mb-2 lg:mb-[11.5px] ml-[-4px] mt-2 text-[13.2px]  text-slate-700">
               <a className="px-[7px] py-[4px] hover:cursor-pointer hover:rounded hover:bg-blue-600 hover:bg-opacity-10 hover:border-blue-400 hover:border border border-transparent">
-                #webdev
-              </a>
-              <a className="px-[7px] py-[4px] hover:cursor-pointer hover:rounded hover:bg-blue-600 hover:bg-opacity-10 hover:border-blue-400 hover:border border border-transparent">
-                #smartcontract
-              </a>
-              <a className="px-[7px] py-[4px] hover:cursor-pointer hover:rounded hover:bg-blue-600 hover:bg-opacity-10 hover:border-blue-400 hover:border border border-transparent">
-                #oracle
-              </a>
-              <a className="px-[7px] py-[4px] hover:cursor-pointer hover:rounded hover:bg-blue-600 hover:bg-opacity-10 hover:border-blue-400 hover:border border border-transparent">
-                #solidity
+                #devrel
               </a>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-[12px] mb-[4px] lg:mb-0 lg:mt-0">
               <div className="flex items-center text-[13.2px]">
-                <div className="ml-[-10.5px] mt-1 flex items-center rounded-md py-1 pl-2 pr-3 text-slate-600 transition-colors duration-200 hover:cursor-pointer hover:bg-[#f5f5f5]">
+                <div className="ml-[-10.5px] mt-1 flex items-center rounded-md py-1 pl-2 pr-3 text-slate-700 transition-colors duration-200 hover:cursor-pointer hover:bg-[#f5f5f5]">
                   <span className="z-50 mr-[-10.5px] rounded-full border-2 border-white bg-[#f5f5f5] p-[3.5px] py-[5px]">
                     <img
                       className="mt-[-3px]"
@@ -80,33 +71,11 @@ export function Body() {
                       height="18"
                     />
                   </span>
-                  <span className="z-30 mr-[-10.5px] rounded-full border-2 border-white bg-[#f5f5f5] p-[3.5px] py-[5px]">
-                    <img
-                      className="mt-[-3px]"
-                      src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
-                      width="18"
-                      height="18"
-                    />
-                  </span>
-                  <span className="z-20 mr-[-10.5px] rounded-full border-2 border-white bg-[#f5f5f5] p-[3.5px] py-[5px]">
-                    <img
-                      className="mt-[-3px]"
-                      src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
-                      width="18"
-                      height="18"
-                    />
-                  </span>
-                  <span className="z-10 mr-[-10.5px] rounded-full border-2 border-white bg-[#f5f5f5] p-[3.5px] py-[5px]">
-                    <img
-                      className="mt-[-3px]"
-                      src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
-                      width="18"
-                      height="18"
-                    />
-                  </span>
-                  <span className="ml-[14px]">19 reactions</span>
+                  <span className="ml-[14px] text-[14px] tracking-tight">4 
+                  {width>= 1024 && ' reactions'}
+                </span>
                 </div>
-                <button className="mt-[4px] flex items-center rounded-md py-[5px] pl-[8px] pr-[12px] text-slate-600 transition-colors duration-200 hover:cursor-pointer hover:bg-[#f5f5f5]">
+                <button className="text-[14px] tracking-tight mt-[4px] flex items-center rounded-md py-[5px] pl-[8px] pr-[12px] text-slate-700 transition-colors duration-200 hover:cursor-pointer hover:bg-[#f5f5f5]">
                   <svg
                     fill="#475569"
                     xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +90,7 @@ export function Body() {
                     </title>
                     <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path>
                   </svg>
-                  5 comments
+                  {width>= 1024 && 'Add Comment'}
                 </button>
               </div>
               <div className="flex items-center">
@@ -144,42 +113,44 @@ export function Body() {
         </div>
       </div>
       {Array.from({ length: 30 }, (_, index) => (
-        <div key={index} className="lg:rounded bg-white p-[20px] pb-[23px] mb-2 shadow-sm ring-[1px] ring-slate-200">
-          <div className="mb-2 flex h-[35px]">
+        <div key={index} className="lg:rounded bg-white p-4 pb-3 lg:p-[20px] lg:pb-[23px] mb-2 shadow-sm ring-[1px] ring-slate-200">
+          <div className="mb-3 lg:mb-2 flex h-[35px]">
             <img
               className="mr-[9px] mt-[1px] h-[32px] w-[32px] rounded-full ring-[0.2px] ring-black"
-              src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F429722%2F42a2e2d8-e835-4781-9fd7-6c9da021a43f.jpg"
-              alt="marksantiago02 profile"
+              src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F302741%2F5ed2ea8e-056a-4065-9bed-57d24a96b607.png"
+              alt="profile"
               loading="lazy"
             />
-            <div className="flex flex-col justify-center">
-              <button className="ml-[-4px] rounded p-1 text-sm transition-colors duration-200 hover:bg-[#f5f5f5]">
-                Pratik Singh
+            <div className="flex flex-col justify-center ml-[-1px]">
+              <button className="tracking-tighter font-[550] ml-[-4px] rounded p-1 text-sm transition-colors text-slate-700 duration-200 hover:bg-[#f5f5f5]">
+                Rizèl Scarlett
               </button>
-              <button className="mt-[-4px] pb-1 text-start text-[12.5px]  text-slate-600 hover:text-black">
-                Nov 30
+              <button className="font-light mt-[-4px] pb-1 text-start text-[12.5px]  text-slate-700 hover:text-black">
+                Dec 2
               </button>
             </div>
           </div>
           <div className="lg:pl-[40px]">
-            <h1 className="mb-[4px] font-bold tracking-tight hover:cursor-pointer hover:text-blue-800 lg:text-[23.5px]">
-              Say Goodbye to tedious Code Reviews
+            <h1
+            style={width >= 1024 ? { lineHeight: "30px" } : { lineHeight: "25px" }}
+            className="mb-[4px] font-bold tracking-[-0.010em] hover:cursor-pointer hover:text-blue-800 text-xl lg:text-[23.5px]">
+                How to Stay and Grow in Tech (especially if you're a minority)
             </h1>
-            <div className="mb-[11.5px] ml-[-4px] mt-2 text-[13.2px]  text-slate-700">
+            <div className="mb-2 lg:mb-[11.5px] ml-[-4px] mt-2 text-[13.2px]  text-slate-700">
               <a className="px-[7px] py-[4px] hover:cursor-pointer hover:rounded hover:bg-blue-600 hover:bg-opacity-10 hover:border-blue-400 hover:border border border-transparent">
-                #webdev
+                #career
               </a>
               <a className="px-[7px] py-[4px] hover:cursor-pointer hover:rounded hover:bg-blue-600 hover:bg-opacity-10 hover:border-blue-400 hover:border border border-transparent">
-                #smartcontract
+                #programming
               </a>
               <a className="px-[7px] py-[4px] hover:cursor-pointer hover:rounded hover:bg-blue-600 hover:bg-opacity-10 hover:border-blue-400 hover:border border border-transparent">
-                #oracle
+                #ai
               </a>
               <a className="px-[7px] py-[4px] hover:cursor-pointer hover:rounded hover:bg-blue-600 hover:bg-opacity-10 hover:border-blue-400 hover:border border border-transparent">
-                #solidity
+                #learning
               </a>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-[12px] mb-[4px] lg:mb-0 lg:mt-0">
               <div className="flex items-center text-[13.2px]">
                 <div className="ml-[-10.5px] mt-1 flex items-center rounded-md py-1 pl-2 pr-3 text-slate-600 transition-colors duration-200 hover:cursor-pointer hover:bg-[#f5f5f5]">
                   <span className="z-50 mr-[-10.5px] rounded-full border-2 border-white bg-[#f5f5f5] p-[3.5px] py-[5px]">
@@ -222,7 +193,7 @@ export function Body() {
                       height="18"
                     />
                   </span>
-                  <span className="ml-[14px]">19 reactions</span>
+                  <span className="ml-[14px]">19 {width>= 1024 && ' reactions'}</span>
                 </div>
                 <button className="mt-[4px] flex items-center rounded-md py-[5px] pl-[8px] pr-[12px] text-slate-600 transition-colors duration-200 hover:cursor-pointer hover:bg-[#f5f5f5]">
                   <svg
@@ -239,7 +210,7 @@ export function Body() {
                     </title>
                     <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path>
                   </svg>
-                  5 comments
+                  {width>= 1024 && '5 comments'}
                 </button>
               </div>
               <div className="flex items-center">

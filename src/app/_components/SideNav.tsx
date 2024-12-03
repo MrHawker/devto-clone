@@ -1,5 +1,5 @@
 
-export function SideNav() {
+export function SideNav({width}:{width:number}) {
   return (
     <div>
       <div className="rounded bg-white p-[16px] shadow-sm ring-[1px] ring-slate-200">

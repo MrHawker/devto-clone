@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { HeadNav } from "./_components/HeadNav";
 import { Body } from "./_components/Body";
 import { Marker } from "./_components/Marker";
@@ -6,34 +6,31 @@ import { SideNav } from "./_components/SideNav";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [showMarker, setShowMarker] = useState(false);
-  const [showSideNav, setShowSideNav] = useState(false);
+  const [width, setWidth] = useState(0);
 
   useEffect(() => {
     const updateVisibility = () => {
-      const width = window.innerWidth;
-      setShowMarker(width >= 1024); 
-      setShowSideNav(width >= 768); 
+      setWidth(window.innerWidth);
     };
-    updateVisibility(); 
+    updateVisibility();
     window.addEventListener("resize", updateVisibility);
     return () => {
       window.removeEventListener("resize", updateVisibility);
     };
   }, []);
-  
+
+  if (width === 0) return <div></div>;
+
   return (
-    <main className="antialiased ">
-      <HeadNav />
-      <div className="bg-[#f5f5f5] justify-center flex ">
-      <div className=" grid max-w-[1380px]
-          md:grid-cols-[2fr_5fr] lg:grid-cols-[240px_2fr_1fr] md:gap-[17px] mx-auto p-0 md:p-2 lg:p-4">
-        {showSideNav && <SideNav />}
-        <Body />
-        {showMarker && <Marker />}
+    <main className="antialiased">
+      <HeadNav width={width}/>
+      <div className="flex justify-center bg-[#f5f5f5]">
+        <div className="mx-auto grid max-w-[1380px] p-0 md:grid-cols-[2fr_5fr] md:gap-[17px] md:p-2 lg:grid-cols-[240px_2fr_1fr] lg:p-4">
+          {width >= 768 && <SideNav width={width} />}
+          <Body width={width} />
+          {width >= 1024 && <Marker width={width} />}
+        </div>
       </div>
-      </div>
-      
     </main>
   );
 }
