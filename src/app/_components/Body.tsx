@@ -134,7 +134,7 @@ export function Body({width}:{width:number}) {
             <h1
             style={width >= 1024 ? { lineHeight: "30px" } : { lineHeight: "25px" }}
             className="mb-[4px] font-bold tracking-[-0.010em] hover:cursor-pointer hover:text-blue-800 text-xl lg:text-[23.5px]">
-                How to Stay and Grow in Tech (especially if you're a minority)
+                How to Stay and Grow in Tech (especially if you&apos;re a minority)
             </h1>
             <div className="mb-2 lg:mb-[11.5px] ml-[-4px] mt-2 text-[13.2px]  text-slate-700">
               <a className="px-[7px] py-[4px] hover:cursor-pointer hover:rounded hover:bg-blue-600 hover:bg-opacity-10 hover:border-blue-400 hover:border border border-transparent">
