@@ -20,7 +20,7 @@ export function Body({width}:{width:number}) {
           src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fpf55mryu3tg4ai2bydve.png"
           width="1000"
           height="420"
-          className="lg:rounded-t bg-[#dddddd]"
+          className="lg:rounded-t-md bg-[#dddddd]"
           alt="Cover image for How to Write a Token Price Oracle Smart Contract"
         />
         <div className="rounded-b bg-white p-4 pb-3 lg:p-[20px] lg:pb-[23px]">

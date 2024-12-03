@@ -863,7 +863,7 @@ export function SideNavSmall({
       </div>
         </div>
     </nav>
-    <div className=" bg-black opacity-50 flex flex-grow h-screen">
+    <div onClick={()=>{setToggle(false)}} className=" bg-black opacity-50 flex flex-grow h-screen">
 
     </div>
   </div>

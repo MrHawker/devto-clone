@@ -40,7 +40,7 @@ export function HeadNav({
             <div className="relative mx-[16px] w-full max-w-[680px] flex-1 lg:w-[680px]">
               <input
                 className="w-full flex-1 rounded-md border border-slate-300 py-[6.5px] pl-[40px] pr-[142px] font-light text-black placeholder-black transition-all duration-100 placeholder:text-[15px] hover:border-slate-400 focus:outline-none focus:ring-[1.5px] focus:ring-blue-700"
-                placeholder="Search..."
+                placeholder="Find related posts..."
               ></input>
               <div className="absolute bottom-[1px] left-[1px] right-auto top-[1px] px-[8px]">
                 <button className="h-full items-center">
@@ -98,7 +98,7 @@ export function HeadNav({
             </a>
           )}
 
-          <button className="mr-[8px] h-full rounded-md border border-blue-700 pb-[7px] pl-[13px] pr-[15px] pt-[9px] text-[15px] font-[550] text-blue-700 hover:bg-blue-700 hover:text-white hover:underline hover:decoration-[1.5px]">
+          <button className="mr-[8px] h-full rounded-md border border-blue-700 pb-[7px]  px-[15px] pt-[9px] text-[14.8px] font-[550] text-blue-700 hover:bg-blue-700 hover:text-white hover:underline hover:decoration-[1.5px]">
             Create account
           </button>
         </div>

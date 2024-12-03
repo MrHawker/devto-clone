@@ -2,15 +2,15 @@
 export function SideNav({width}:{width:number}) {
   return (
     <div>
-      <div className="rounded bg-white p-[16px] shadow-sm ring-[1px] ring-slate-200">
+      <div className="rounded-[5px] bg-white p-[16px] shadow-sm ring-[1px] ring-slate-200">
         <h2 className="mb-[16px]  text-[19px] font-bold leading-[1.3] ">
           DEV Community is a community of 2,475,459 amazing developers
         </h2>
-        <p className="mb-[16px] text-slate-600 tracking-tight">
+        <p className="mb-[16px] text-slate-600 tracking-tight font-[350]">
           We&apos;re a place where coders share, stay up-to-date and grow their
           careers.
         </p>
-        <button className="mb-[4px] w-full rounded-md border border-blue-700 pb-[8px] pl-[12px] pr-[15px] pt-[9px] text-[14.5px] font-[550] text-blue-700 hover:bg-blue-700 hover:text-white hover:underline hover:decoration-[1.5px]">
+        <button className="mb-[4px] w-full rounded-md border border-blue-700 pb-[8px]  px-[15px] pt-[9px] text-[14.5px] font-[550] text-blue-700 hover:bg-blue-700 hover:text-white hover:underline hover:decoration-[1.5px]">
           Create account
         </button>
         <button className=" w-full px-[16px] py-[8px] text-slate-700 hover:rounded-md hover:bg-blue-600 hover:bg-opacity-10 hover:text-blue-800 hover:underline">
