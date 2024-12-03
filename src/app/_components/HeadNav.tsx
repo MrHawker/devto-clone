@@ -1,12 +1,20 @@
+"use client";
 
-
-export function HeadNav({ width }: { width: number }) {
+export function HeadNav({
+  width,
+  toggle,
+  setToggle,
+}: {
+  width: number;
+  toggle: boolean;
+  setToggle: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
     <header className="sticky top-0 z-[60] flex h-[57px] justify-center border-b border-t-0 bg-white shadow-sm">
       <nav className="flex h-full w-full max-w-[1380px] items-center justify-between md:px-[16px]">
         <div className="flex flex-1 flex-row items-center">
           {width < 768 && (
-            <div className="mx-2 p-2">
+            <div onClick={()=>setToggle(true)} className="mx-2 p-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

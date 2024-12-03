@@ -1,6 +1,6 @@
 export function Body({width}:{width:number}) {
   return (
-    <div>
+    <div >
       <header className="flex justify-start py-[8px] text-[18px] tracking-tighter md:mb-[7.5px] md:py-0 mb-[-0.5px]">
         <div className="rounded-lg px-[12px] py-[4px] font-bold hover:cursor-pointer hover:bg-white hover:text-blue-700">
           Relevant
